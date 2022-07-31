@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test1</title>
+    <h1 id = "title"></h1>
+    <script>
+
+        var k = 1;
+        var err = 0.00000001;
+
+        while(true){
+            var num = (Math.random() * 0.1) + 2.1;   //범위 조정          
+            var x = num*num*num;
+
+
+            if(Math.abs(x- 10)< err){
+                var h = document.querySelector('#title');
+
+                h.innerHTML += '시도횟수:' + k +'</br>';
+                h.innerHTML +='세제곱근:'+ x;
+                break;
+            }
+            k++;
+        }
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

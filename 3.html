@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3test</title>
+<script>
+var J = {name : 'Jinsu' ,age : 21};
+var C = {name : 'Chulsu', age : 20};
+
+            
+   window.onload = function(){
+        var a = document.querySelector('#a');
+        var b = document.querySelector('#b');
+        var c = document.querySelector('#c');
+            
+            a.onclick = function(){
+                var av = (J.age + C.age)/2;
+                this.innerHTML+=av;
+                J.age++;
+                C.age++;
+            }
+            b.onclick = function(){
+                var av = (J.age + C.age)/2;
+                this.innerHTML+=av;
+                J.age++;
+                C.age++;
+            }
+            c.onclick = function(){
+                var av = (J.age + C.age)/2;
+                this.innerHTML+=av;
+                J.age++;
+                C.age++;
+            }
+        }  
+        
+</script>
+</head>
+<body>
+        <button id = 'a'>sum</button>
+        <button id = 'b'>sum</button>
+        <button id = 'c'>sum</button>
+  
+</body>
+</html>
